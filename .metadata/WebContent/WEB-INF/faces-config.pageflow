@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15074223618343" configfile="/servidor/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf15074669495890" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15074669495891 pf15074676388913 pf15074676388914" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="ListadoUsuarios.xhtml" id="pf15074669495892" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15074669495891" path="/ListadoUsuarios.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="error.xhtml" id="pf15074676388915" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15074676388913" path="/error.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf15074676388916" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15074676388914" path="/index.xhtml"/>
+  <links id="pf15074669495891" target="pf15074669495892" source="pf15074669495890" outcome="exito" fromaction="#{controllerusuario.listado}"/>
+  <links id="pf15074676388913" target="pf15074676388915" source="pf15074669495890" outcome="error"/>
+  <links id="pf15074676388914" target="pf15074676388916" source="pf15074669495890" outcome="enlaceCasa"/>
+</pageflow:Pageflow>
